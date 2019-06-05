@@ -1,0 +1,22 @@
+<!--home에서의 기능 
+1. 사용자에게 입력받기
+2. about 페이지와 링크로 연결
+3. 제출 버튼 -->
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<br>
+<div class = "container" style="color: rgb(77, 77, 77)" style="margin: 5%">
+    <h1 style="text-align:center">단어를 세어줍니다!</h1>
+</div>
+<br>
+
+<div class = "container" style="align-self: center">
+<form action="{% url 'result' %}" >
+    <textarea cols="125" rows="10" name="fulltext">
+    </textarea>
+    <br>
+    <input type="submit" value=" Count! " style="margin : 5px 0px ; padding: 6px 6px; color:rgb(226, 226, 226); background: rgb(85, 85, 85); border:none; align-self:center">
+</form>
+</div>
+{% endblock %}

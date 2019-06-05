@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<br><br>
+<h3 style="text-align:center; color: rgb(77, 77, 77)">입력한 글의 단어와 문장의 수를 세어 줍니다.</h3>
+<br><br>
+<p style="text-align:center; color: rgb(145, 143, 143)">입력한 글의 단어와 문장의 수를 세어 줍니다.<br>한 번 입력해보세요!</p>
+<br><br><br>
+<div class="container" style="vertical-align: center">
+<a href="{% url 'home' %}" style="margin : 5px 0px ; padding: 6px 6px; color:rgb(226, 226, 226); background: rgb(141, 141, 141); border: none; align-self: center">home으로 돌아가기</a>
+</div>
+{% endblock %}
